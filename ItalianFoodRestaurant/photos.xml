@@ -1,0 +1,32 @@
+<photos>
+  <photo>
+    <src>image/steak.jpg</src>
+    <title>Steak</title>
+    <description>A delicious steak dish tantalizes the taste buds with its sizzling, juicy meat cooked to perfection. Each bite reveals a burst of flavor, as the well-seasoned steak melts in your mouth, leaving you craving for more. Paired with a side of creamy mashed potatoes and sautéed vegetables, this culinary masterpiece is a feast for both the eyes and the palate.</description>
+  </photo>
+  <photo>
+    <src>image/pasta.jpg</src>
+    <title>Pasta</title>
+    <description>Pasta with tomato sauce is a classic and beloved dish that brings together the richness of pasta and the vibrant flavors of a well-prepared tomato sauce. The al dente pasta, combined with the tangy and savory tomato sauce, creates a satisfying and comforting meal that never fails to please. Whether you choose spaghetti, penne, or any other pasta shape, the marriage of pasta and tomato sauce is a timeless culinary delight.</description>
+  </photo>
+  <photo>
+    <src>image/bread.jpg</src>
+    <title>Bread</title>
+    <description>Freshly baked bread with a crispy crust is a sensory delight that captivates both the eyes and taste buds. The aroma of warm yeast and the sound of crackling crust as you take a bite evoke a comforting and irresistible experience. Each slice offers a harmonious balance between the soft, fluffy interior and the golden, crusty exterior, making it a culinary treasure worth savoring.</description>
+  </photo>
+  <photo>
+    <src>image/drinks.jpg</src>
+    <title>Drinks</title>
+    <description>Indulge in our wide selection of refreshing beverages meticulously crafted to satisfy and quench your thirst. From revitalizing fruit-infused blends to invigorating herbal teas, our menu offers a delightful range of options to suit every palate. As a special treat, we proudly present a 50-year-old wine, aged to perfection, for those seeking a luxurious and sophisticated experience that embodies the rich history and flavors of fine winemaking.</description>
+  </photo>
+  <photo>
+    <src>image/pizza.jpg</src>
+    <title>Pizza</title>
+    <description>Indulge in the delightful world of authentic Italian pizza, crafted with passion and expertise. Each heavenly slice is adorned with a plethora of tantalizing toppings, creating a symphony of flavors that will transport your taste buds to the streets of Italy. From classic margherita and pepperoni to gourmet combinations like prosciutto and arugula or truffle mushroom, every bite is a culinary masterpiece that celebrates the art of pizza-making.</description>
+  </photo>
+  <photo>
+    <src>image/lasagna.jpg</src>
+    <title>Lasagna</title>
+    <description>Indulge in the ultimate comfort food with this mouthwatering creamy lasagna. Each heavenly bite unveils layers of perfectly cooked pasta, savory meat, and a generous amount of cheese, all enveloped in a luxuriously rich sauce. Whether it's a family gathering or a cozy night in, this irresistible dish promises to satisfy your cravings and leave you longing for seconds.</description>
+  </photo>
+</photos>

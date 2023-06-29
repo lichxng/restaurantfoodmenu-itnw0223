@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>migliore d'Italia</title>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <!-- Navigation bar -->
+    <header>
+        <a href="#"><img src="image/logo.png" class="logo"></a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#information" onclick="loadInformation()">Information</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About us</a></li>
+          </ul> 
+    </header>
+
+
+    <!-- Home page -->
+    <section class="home" id="home">
+        <div class="content">
+            <div class="textBox">
+                <h3>Let <span>Italy<br></span> come to you!</h3>
+                <p>We serve delicious food that will entice everyone to return to our restaurant. We offer a wide variety of exceptional and distinctive Italian cuisine. Because we ensure that the food we prepare is made with love, our grateful and devoted customers like, love, and enjoy it. If you are unable to travel to Italy to sample its best cuisine, we can provide it to you here in Migliore d'Italia.</p>
+                <a href="#menu"> View Our Menu</a>
+            </div>
+            <div class="imgBox">
+                <img src="image/img1.png" class="main">
+            </div>
+            <ul class="thumb">
+                <li><img src="image/small1.png" onclick="imgSlider('image/small1.png')"></li>
+                <li><img src="image/small2.png" onclick="imgSlider('image/small2.png')"></li>
+                <li><img src="image/small4.png" onclick="imgSlider('image/small4.png')"></li>
+            </ul>
+        </div>
+    </section>
+
+    
+    <!-- Information page -->
+    <section class="information" id="information"style="margin-top: 100px;">
+
+        <div class="container">
+
+        <div id="infoDiscover" class="info-discover">
+            <h2 id="ourHistory">Discover Our<br>History</h2>
+            <p id="history"></p>
+        </div>
+
+        <h1 class="FoodType">Do you want to learn more about <br>what we have to offer?</h1>
+        <p class="exploreTxt">"so explore every image we present"</p>
+        <div class="food">
+        
+        <div class="row">
+            <div class="Bread">
+            <div class="img-container">
+                <img class="img" src="image/steak.jpg">
+                <div class="img-body">
+                <h3 class="title"></h3>
+                <p class="description"></p>
+                </div>
+            </div>
+            </div>
+    
+            <div class="Drinks">
+            <div class="img-container">
+                <img class="img" src="image/pasta.jpg">
+                <div class="img-body">
+                <h3 class="title"></h3>
+                <p class="description"></p>
+                </div>
+            </div>
+            </div>
+
+            <div class="Bread">
+            <div class="img-container">
+                <img class="img" src="image/bread.jpg">
+                <div class="img-body">
+                <h3 class="title"></h3>
+                <p class="description"></p>
+                </div>
+            </div>
+            </div>
+            </div>
+            <div class="row">
+            <div class="Drinks">
+            <div class="img-container">
+                <img class="img" src="image/drinks.jpg">
+                <div class="img-body">
+                <h3 class="title"></h3>
+                <p class="description"></p>
+                </div>
+            </div>
+            </div>
+
+            <div class="Pizza">
+            <div class="img-container">
+                <img class="img" src="image/pizza.jpg">
+                <div class="img-body">
+                <h3 class="title"></h3>
+                <p class="description"></p>
+                </div>
+            </div>
+            </div>
+    
+            <div class="Lasagna">
+            <div class="img-container">
+                <img class="img" src="image/lasagna.jpg">
+                <div class="img-body">
+                <h3 class="title"></h3>
+                <p class="description"></p>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    
+        <div>
+            <h3 class="loc">Contact Information</h3>
+            <div class="contactInfo">
+            <p class="location">Address: <span id="address"></span></p>
+        <p class="email">Email: <span id="email"></span></p>
+        <p class="phone">Phone: <span id="phone"></span></p>
+        <button id="locationButton" style="margin-top: 10px;">View Location</button>
+        <div class="image-container">
+        <iframe id="direction" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8732.754172681138!2d121.04616631084929!3d14.54120233122806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8f3fa2994af%3A0x89c988af4760e40a!2sBonifacio%20Global%20City%2C%20Taguig%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1687693574875!5m2!1sen!2sph" 
+        width="580" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="hidden"></iframe>
+        </div>
+            </div>
+        </div> 
+  </section>
+
+
+    <!-- Menu page -->
+    <section class="menu" id="menu">
+        <h1 class="heading">Our <span>Menu</span></h1>
+
+        <div class="menuBox">
+
+            <div class="menuCard">
+                <div class="menuImage">
+                    <img src="image/menu11.jpg">
+                </div>
+
+                <div class="menuInfo">
+                    <h2>Cornetto</h2>
+                    <p>Buttery, light and flaky pastry made with layers of brioche dough and butter.<br><br></p>
+                    <h3>₱139.00</h3>
+                    <div class="menuIcon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="menuCard">
+                <div class="menuImage">
+                    <img src="image/menu15.jpg">
+                </div>
+
+                <div class="menuInfo">
+                    <h2>Gelato alla fragola</h2>
+                    <p>Firm, creamy consistency, light pink color, and a refreshing and intense strawberry flavor.</p>
+                    <h3>₱346.00</h3>
+                    <div class="menuIcon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menuCard">
+                <div class="menuImage">
+                    <img src="image/menu4.jpg">
+                </div>
+
+                <div class="menuInfo">
+                    <h2>Tortellini</h2>
+                    <p>A ring shaped stuffed pasta that is typically filled with meat, cheese or vegetables.<br><br></p>
+                    <h3>₱1269.00</h3>
+                    <div class="menuIcon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menuCard">
+                <div class="menuImage">
+                    <img src="image/menu6.jpg">
+                </div>
+
+                <div class="menuInfo">
+                    <h2>Pizza ai funghi</h2>
+                    <p>Topped with tomato sauce, mozzarella cheese, mushrooms, oil, and parsley.<br><br></p>
+                    <h3>₱849.00</h3>
+                    <div class="menuIcon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menuCard">
+                <div class="menuImage">
+                    <img src="image/menu19.jpg">
+                </div>
+
+                <div class="menuInfo">
+                    <h2> Bellini</h2>
+                    <p>Sparkling Italian cocktails made with two simple ingredients: Prosecco and peach purée.</p>
+                    <h3>₱876.00</h3>
+                    <div class="menuIcon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menuCard">
+                <div class="menuImage">
+                    <img src="image/menu9.jpg">
+                </div>
+
+                <div class="menuInfo">
+                    <h2>Lasagna alla Bolognese al Forno</h2>
+                    <p>Paper-thin lasagna noodles layered with besciamella, ragu Bolognese and Parmigiano-Reggiano.</p>
+                    <h3>₱1174.00</h3>
+                    <div class="menuIcon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menuCard">
+                <div class="menuImage">
+                    <img src="image/menu1.jpg">
+                </div>
+
+                <div class="menuInfo">
+                    <h2>Beef Tagliata</h2>
+                    <p>Boneless piece of grilled beef, served in slices.<br><br></p>
+                    <h3>₱1949.00</h3>
+                    <div class="menuIcon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menuCard">
+                <div class="menuImage">
+                    <img src="image/menu13.jpg">
+                </div>
+
+                <div class="menuInfo">
+                    <h2>Grissini</h2>
+                    <p>Made from dough that is elastic in texture allowing for the shaping of a long and very thin stick.</p>
+                    <h3>₱109.00</h3>
+                    <div class="menuIcon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menuCard">
+                <div class="menuImage">
+                    <img src="image/menu5.jpg">
+                </div>
+
+                <div class="menuInfo">
+                    <h2>Pasta Carbonara</h2>
+                    <p>A creamy sauce that's made with pancetta, garlic, pasta water, cheese and eggs.<br><br></p>
+                    <h3>₱849.00</h3>
+                    <div class="menuIcon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menuCard">
+                <div class="menuImage">
+                    <img src="image/menu14.jpg">
+                </div>
+
+                <div class="menuInfo">
+                    <h2>Tartufo di Pizzo</h2>
+                    <p>A cocoa-dusted chocolate-and-hazelnut ice cream bombe.<br><br></p>
+                    <h3>₱289.00</h3>
+                    <div class="menuIcon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menuCard">
+                <div class="menuImage">
+                    <img src="image/menu17.jpg">
+                </div>
+
+                <div class="menuInfo">
+                    <h2>Negroni</h2>
+                    <p>Composed of Gin, Sweet Vermouth, Campari bitters, and an orange slice.<br><br></p>
+                    <h3>₱789.00</h3>
+                    <div class="menuIcon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menuCard">
+                <div class="menuImage">
+                    <img src="image/menu7.jpg">
+                </div>
+
+                <div class="menuInfo">
+                    <h2>Caprese Pizza</h2>
+                    <p>Topped with cherry tomatoes, mozzarella di bufala, olive oil, and fresh basil leaves.<br><br></p>
+                    <h3>₱809.00</h3>
+                    <div class="menuIcon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menuCard">
+                <div class="menuImage">
+                    <img src="image/menu2.jpg">
+                </div>
+
+                <div class="menuInfo">
+                    <h2>Bistecca alla Fiorentina</h2>
+                    <p>Short loin, with strip steak on one side of a T-shaped bone and tenderloin on the other.<br><br></p>
+                    <h3>₱2499.00</h3>
+                    <div class="menuIcon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menuCard">
+                <div class="menuImage">
+                    <img src="image/menu16.jpg">
+                </div>
+
+                <div class="menuInfo">
+                    <h2>Affogato</h2>
+                    <p>A shot of freshly brewed espresso and a scoop of vanilla or fior di latte gelato.<br><br></p>
+                    <h3>₱399.00</h3>
+                    <div class="menuIcon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menuCard">
+                <div class="menuImage">
+                    <img src="image/menu3.jpg">
+                </div>
+
+                <div class="menuInfo">
+                    <h2>Spaghetti alla puttanesca</h2>
+                    <p>Gutsy, tomato-based sauce, made with anchovies, olives, capers and plenty of garlic and dried chilli.</p>
+                    <h3>₱915.00</h3>
+                    <div class="menuIcon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menuCard">
+                <div class="menuImage">
+                    <img src="image/menu10.jpg">
+                </div>
+
+                <div class="menuInfo">
+                    <h2>Lasagna alla Genovese</h2>
+                    <p>Made with a mixture of pesto alla genovese and bechamel sauce, to which vegetables can be added.</p>
+                    <h3>₱989.00</h3>
+                    <div class="menuIcon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menuCard">
+                <div class="menuImage">
+                    <img src="image/menu12.jpg">
+                </div>
+
+                <div class="menuInfo">
+                    <h2>La Piadina</h2>
+                    <p>Soft and fluffy Italian flatbread that can be filled with anything you like from cured meats, cheese and grilled veggies.</p>
+                    <h3>₱279.00</h3>
+                    <div class="menuIcon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menuCard">
+                <div class="menuImage">
+                    <img src="image/menu18.jpg">
+                </div>
+
+                <div class="menuInfo">
+                    <h2>Spritz</h2>
+                    <p>consists of prosecco, digestive bitters and soda water.<br><br></p>
+                    <h3>₱589.00</h3>
+                    <div class="menuIcon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menuCard">
+                <div class="menuImage">
+                    <img src="image/menu8.jpg">
+                </div>
+
+                <div class="menuInfo">
+                    <h2>Calzone Pizza</h2>
+                    <p>Half-round shape, made by folding a full-sized pizza in half.<br><br></p>
+                    <h3>₱739.00</h3>
+                    <div class="menuIcon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menuCard">
+                <div class="menuImage">
+                    <img src="image/menu20.jpg">
+                </div>
+
+                <div class="menuInfo">
+                    <h2>Espresso</h2>
+                    <p>Brewed very strong and served in a small cup.<br><br></p>
+                    <h3>₱109.00</h3>
+                    <div class="menuIcon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+    
+      
+    <!-- Gallery page -->
+    <section class="gallery" id="gallery">
+        <h1 class="heading"><span>― </span>Gallery<span> ―</span></h1>
+        <div class="container">
+
+            <div class="row">
+                <div class="gallery-filter">
+                    <span class="filter-item active" data-filter="all">all</span>
+                    <span class="filter-item" data-filter="drinks">Drinks</span>
+                    <span class="filter-item" data-filter="foods">Food</span>
+                    <span class="filter-item" data-filter="interior">Interior</span>
+                </div>
+            </div>
+
+            <div class="row">
+                    <div class="gallery-item foods">
+                        <div class="gallery-item-inner">
+                            <img src="image/food1.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="gallery-item drinks">
+                        <div class="gallery-item-inner">
+                            <img src="image/drink1.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="gallery-item interior">
+                        <div class="gallery-item-inner">
+                            <img src="image/interior1.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="gallery-item interior">
+                        <div class="gallery-item-inner">
+                            <img src="image/interior2.jpg" alt="">
+                        </div>
+                    </div>
+    
+                    <div class="gallery-item foods">
+                        <div class="gallery-item-inner">
+                            <img src="image/food5.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="gallery-item drinks">
+                        <div class="gallery-item-inner">
+                            <img src="image/drink2.jpg" alt="">
+                        </div>
+                    </div>
+    
+    
+                    <div class="gallery-item foods">
+                        <div class="gallery-item-inner">
+                            <img src="image/food3.jpg" alt="">
+                        </div>
+                    </div>
+    
+    
+                    <div class="gallery-item foods">
+                        <div class="gallery-item-inner">
+                            <img src="image/food2.jpg" alt="">
+                        </div>
+                    </div>
+    
+                    <div class="gallery-item drinks">
+                        <div class="gallery-item-inner">
+                            <img src="image/drink4.jpg" alt="">
+                        </div>
+                    </div>
+    
+                    <div class="gallery-item foods">
+                        <div class="gallery-item-inner">
+                            <img src="image/food4.jpg" alt="">
+                        </div>
+                    </div>
+    
+                    
+                    <div class="gallery-item foods">
+                        <div class="gallery-item-inner">
+                            <img src="image/food7.jpg" alt="">
+                        </div>
+                    </div>      
+                    
+                    <div class="gallery-item interior">
+                        <div class="gallery-item-inner">
+                            <img src="image/interior3.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="gallery-item interior">
+                        <div class="gallery-item-inner">
+                            <img src="image/interior4.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="gallery-item foods">
+                        <div class="gallery-item-inner">
+                            <img src="image/food8.jpg" alt="">
+                        </div>
+                    </div>
+    
+                    <div class="gallery-item drinks">
+                        <div class="gallery-item-inner">
+                            <img src="image/drink3.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="gallery-item drinks">
+                        <div class="gallery-item-inner">
+                            <img src="image/drink6.jpg" alt="">
+                        </div>
+                    </div>
+    
+                    <div class="gallery-item interior">
+                        <div class="gallery-item-inner">
+                            <img src="image/interior5.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="gallery-item foods">
+                        <div class="gallery-item-inner">
+                            <img src="image/drink5.jpg" alt="">
+                        </div>
+                    </div>
+
+
+                    
+    
+            </div>
+        </div>
+            </div>
+    </section>
+
+        
+        <!-- About Us page -->
+    <section class="about" id="about">
+        <h1 class="heading">About <span>Us</span></h1>
+    
+        <div class="team">
+            
+            <div class="teamMember">
+                <div class="teamImg">
+                    <img src="image/fres.png" alt="team_member_image">
+                </div>
+                <h3>Manalo, Fresally J.</h3>
+                <p class="age">20 years old</p>
+                <p>BSIT-NW2E <br> Balanga City, Bataan</p>
+
+                <div class="icon">
+                    <a href="https://www.facebook.com/fresally.manalo">
+                    <ion-icon name="logo-facebook"></ion-icon> </a>
+                    <a href="https://twitter.com/fresmnl">
+                    <ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="https://www.instagram.com/fresmnl/">
+                    <ion-icon name="logo-instagram"></ion-icon> </a>
+                </div>
+            </div>
+
+            <div class="teamMember">
+                <div class="teamImg">
+                    <img src="image/chua.png" alt="team_member_image">
+                </div>
+                <h3>Ordonio, Joshua G.</h3>
+                <p class="age">20 years old</p>
+                <p>BSIT-NW2E <br> Balanga City, Bataan</p>
+
+                <div class="icon">
+                    <a href="https://www.facebook.com/joszxchua">
+                    <ion-icon name="logo-facebook"></ion-icon> </a>
+                    <a href="https://twitter.com/joszxchua_">
+                    <ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="https://www.instagram.com/joszxchua/">
+                    <ion-icon name="logo-instagram"></ion-icon> </a>
+                </div>
+            </div>
+
+            <div class="teamMember">
+                <div class="teamImg">
+                    <img src="image/leah.png" alt="team_member_image">
+                </div>
+                <h3>Magdato, Leah Jean</h3>
+                <p class="age">20 years old</p>
+                <p>BSIT-NW2E <br> Bagac, Bataan</p>
+
+                <div class="icon">
+                    <a href="https://www.facebook.com/leahjean.magdato.1">
+                    <ion-icon name="logo-facebook"></ion-icon> </a>
+                    <a href="https://twitter.com/lichxng_">
+                    <ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="https://www.instagram.com/lichxng_/">
+                    <ion-icon name="logo-instagram"></ion-icon> </a>
+                </div>
+            </div>
+
+            <div class="teamMember">
+                <div class="teamImg">
+                    <img src="image/edgar.png" alt="team_member_image">
+                </div>
+                <h3>Tezoro, Edgar Z.</h3>
+                <p class="age">20 years old</p>
+                <p>BSIT-NW2E <br> Bagac, Bataan</p>
+
+                <div class="icon">
+                    <a href="https://www.facebook.com/StyxusXever">
+                    <ion-icon name="logo-facebook"></ion-icon> </a>
+                    <a href="https://twitter.com/styxusss">
+                    <ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="https://www.instagram.com/_styxus/">
+                    <ion-icon name="logo-instagram"></ion-icon> </a>
+                </div>
+            </div>
+
+            <div class="teamMember">
+                <div class="teamImg">
+                    <img src="image/mg.png" alt="team_member_image">
+                </div>
+                <h3>Caudilla, Mary Grace P.</h3>
+                <p class="age">20 years old</p>
+                <p>BSIT-NW2E <br> Orani, Bataan</p>
+
+                <div class="icon">
+                    <a href="https://www.facebook.com/mg.caudilla.1">
+                    <ion-icon name="logo-facebook"></ion-icon> </a>
+                    <a href="https://twitter.com/itsgarah">
+                    <ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="https://www.instagram.com/grace.skie/">
+                    <ion-icon name="logo-instagram"></ion-icon> </a>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+
+<xml id="info-txt" src="info.xml"></xml> <!-- to get the xml value -->
+<script type="text/javascript" src="js/script.js"></script> <!-- to get the location -->
+    </body>
+</html>
